@@ -1,0 +1,75 @@
+.channels .panel__head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.channels__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin: var(--space-6) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.channel-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.channel-row__label {
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+.channel-row__track {
+  display: block;
+  height: 8px;
+  background: var(--track);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.channel-row__bar {
+  display: block;
+  width: 100%;
+  height: 8px;
+}
+
+.channel-row__bar rect {
+  fill: var(--sage);
+}
+
+.channel-row__bar--leaf rect {
+  fill: var(--leaf-deep);
+}
+
+.channel-row__bar--sage rect {
+  fill: var(--sage);
+}
+
+.channel-row__bar--gold rect {
+  fill: var(--highlight);
+}
+
+.channel-row__value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--forest);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 767px) {
+  .channel-row {
+    grid-template-columns: 84px minmax(0, 1fr) auto;
+    gap: var(--space-2);
+  }
+
+  .channels__list {
+    margin-top: var(--space-5);
+    gap: var(--space-4);
+  }
+}

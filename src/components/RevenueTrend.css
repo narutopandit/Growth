@@ -1,0 +1,42 @@
+.trend {
+  justify-content: flex-start;
+}
+
+.trend .panel__head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.trend__chart {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  padding-top: var(--space-5);
+  overflow: visible;
+}
+
+.trend__grid line {
+  stroke: var(--divider);
+  stroke-width: 1;
+}
+
+.trend__line {
+  fill: none;
+  stroke: var(--leaf);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.trend__dot {
+  fill: var(--leaf);
+  stroke: var(--white);
+  stroke-width: 2;
+}
+
+@media (max-width: 767px) {
+  .trend__chart {
+    padding-top: var(--space-3);
+  }
+}

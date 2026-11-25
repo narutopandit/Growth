@@ -1,0 +1,133 @@
+:root {
+  /* Brand palette — BRAND_AND_DESIGN_SPEC */
+  --forest: #173f35;
+  --leaf: #4d8a64;
+  --sage: #6a9a7b;
+  --canvas: #f4f7f2;
+  --white: #ffffff;
+  --divider: #dfe8df;
+  --highlight: #d7ae62;
+
+  /* Derived brand tones */
+  --leaf-deep: #2f6b4a;
+  --lime-tint: #a9d0b3;
+  --mint-tint: #7fb08c;
+
+  /* Text */
+  --ink: #1e2e27;
+  --ink-strong: #26352e;
+  --text-soft: #33463d;
+  --muted: #5c7069;
+  --text-disabled: #9aa9a0;
+  --table-head-text: #4c6157;
+
+  /* Surfaces and lines */
+  --surface-muted: #edf3ea;
+  --row-divider: #edf2ec;
+  --track: #e7ede5;
+  --control-border-hover: #c3d4c3;
+
+  /* Status */
+  --status-completed: var(--leaf-deep);
+  --status-completed-bg: #e9f2ec;
+  --status-pending: #8a6114;
+  --status-pending-bg: #faf1dd;
+  --status-refunded: #5f5340;
+  --status-refunded-bg: #f1ede3;
+  --status-cancelled: #a33a2f;
+  --status-cancelled-bg: #fbe9e6;
+
+  /* Content on the forest surface */
+  --on-forest: #ffffff;
+  --on-forest-muted: rgba(255, 255, 255, 0.82);
+  --on-forest-soft: rgba(255, 255, 255, 0.68);
+  --on-forest-faint: rgba(255, 255, 255, 0.62);
+  --on-forest-hover: rgba(255, 255, 255, 0.1);
+  --on-forest-line: rgba(255, 255, 255, 0.24);
+  --on-forest-divider: rgba(255, 255, 255, 0.16);
+  --on-forest-active: #2e5f4f;
+
+  /* Brand mark */
+  --logo-leaf-light: var(--mint-tint);
+  --logo-leaf-tint: var(--lime-tint);
+  --logo-leaf-gold: var(--highlight);
+
+  /* Elevation */
+  --shadow-card: 0 1px 2px rgba(23, 63, 53, 0.05);
+  --shadow-control: 0 1px 2px rgba(23, 63, 53, 0.04);
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-tile: 10px;
+  --radius-card: 14px;
+  --radius-panel: 16px;
+  --radius-pill: 999px;
+
+  /* Spacing scale — 4px base */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 56px;
+
+  font-family: Inter, 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--ink);
+  background-color: var(--canvas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--canvas);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+button,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
